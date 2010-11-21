@@ -94,7 +94,7 @@ map <silent> <F2> <ESC>:NERDTreeToggle<CR>
 nmap <silent> <leader>ft :NERDTreeFind<CR>
 
 " Command-T
-map <silent> <C-t> <ESC>:CommandT<CR>
+map <silent> <D-t> <ESC>:CommandT<CR>
 
 " Move line(s) of text using Alt+j/k
 nnoremap <silent> <A-j> :m+<CR>==
@@ -108,13 +108,13 @@ vnoremap <silent> <A-k> :m-2<CR>gv=gv
 vmap > >gv
 vmap < <gv
 
-" Indenting with Alt + [ and ]
-nmap <A-[> <<
-nmap <A-]> >>
-nmap <A-h> <<
-nmap <A-l> >>
-vmap <A-[> <gv
-vmap <A-]> >gv
+" Indenting with Cmd + [ and ]
+nmap <D-[> <<
+nmap <D-]> >>
+nmap <D-h> <<
+nmap <D-l> >>
+vmap <D-[> <gv
+vmap <D-]> >gv
 
 
 " Remove the annoying icons - we should use keyboard anyway!
