@@ -50,10 +50,10 @@ au FocusLost * :wa
 
 " Split windows
 nnoremap <leader>w <C-w>v<C-w>1
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+nnoremap <D-h> <C-w>h
+nnoremap <D-j> <C-w>j
+nnoremap <D-k> <C-w>k
+nnoremap <D-l> <C-w>l
 
 " Folding settings
 set foldmethod=indent   "indent based on syntax
@@ -96,13 +96,13 @@ nmap <silent> <leader>ft :NERDTreeFind<CR>
 " Command-T
 map <silent> <D-t> <ESC>:CommandT<CR>
 
-" Move line(s) of text using Cmd+j/k
-nnoremap <silent> <D-j> :m+<CR>==
-nnoremap <silent> <D-k> :m-2<CR>==
-inoremap <silent> <D-j> <Esc>:m+<CR>==gi
-inoremap <silent> <D-k> <Esc>:m-2<CR>==gi
-vnoremap <silent> <D-j> :m'>+<CR>gv=gv
-vnoremap <silent> <D-k> :m-2<CR>gv=gv
+" Move line(s) of text using Alt+j/k
+nnoremap <silent> <A-j> :m+<CR>==
+nnoremap <silent> <A-k> :m-2<CR>==
+inoremap <silent> <A-j> <Esc>:m+<CR>==gi
+inoremap <silent> <A-k> <Esc>:m-2<CR>==gi
+vnoremap <silent> <A-j> :m'>+<CR>gv=gv
+vnoremap <silent> <A-k> :m-2<CR>gv=gv
 
 " Preserve selection when indenting
 vmap > >gv
