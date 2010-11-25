@@ -2,16 +2,11 @@
 filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
-filetype plugin indent on
+filetype on
 
 " Syntax & colors
 syntax on
 colors sunburst
-
-" Turn off VI compatibility
-set nocompatible
-set modeline modelines=0
-
 
 " Tabs
 set tabstop=2
