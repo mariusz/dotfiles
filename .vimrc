@@ -1,3 +1,9 @@
+" Pathogen
+filetype off
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+filetype plugin indent on
+
 " Syntax & colors
 syntax on
 colors sunburst
@@ -6,9 +12,6 @@ colors sunburst
 set nocompatible
 set modeline modelines=0
 
-"
-filetype plugin indent on
-call pathogen#runtime_append_all_bundles()
 
 " Tabs
 set tabstop=2
@@ -43,17 +46,17 @@ nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
 " ; == :
-nnoremap ; :
+" nnoremap ; :
 
 " Save on tab-out
 au FocusLost * :wa
 
 " Split windows
 nnoremap <leader>w <C-w>v<C-w>1
-nnoremap <D-h> <C-w>h
-nnoremap <D-j> <C-w>j
-nnoremap <D-k> <C-w>k
-nnoremap <D-l> <C-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 " Folding settings
 set foldmethod=indent   "indent based on syntax
@@ -94,7 +97,7 @@ map <silent> <F2> <ESC>:NERDTreeToggle<CR>
 nmap <silent> <leader>ft :NERDTreeFind<CR>
 
 " Command-T
-map <silent> <D-t> <ESC>:CommandT<CR>
+map <silent> <D-t> <leader>p
 
 " Move line(s) of text using Alt+j/k
 nnoremap <silent> <A-j> :m+<CR>==
@@ -115,6 +118,8 @@ nmap <D-h> <<
 nmap <D-l> >>
 vmap <D-[> <gv
 vmap <D-]> >gv
+imap <D-[> <ESC><<gi
+imap <D-]> <ESC>>>gi
 
 
 " Remove the annoying icons - we should use keyboard anyway!

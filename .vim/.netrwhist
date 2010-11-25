@@ -1,8 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/mariusz/Documents/workspace/qwerly'
 let g:netrw_dirhist_2='/Users/mariusz/Documents/workspace/qwerly/app'
 let g:netrw_dirhist_3='/Users/mariusz/Documents/workspace/qwerly/app/qwerly'
 let g:netrw_dirhist_4='/Users/mariusz/Documents/workspace/qwerly/app/qwerly/public'
 let g:netrw_dirhist_5='/Users/mariusz/Documents/workspace/qwerly/app/qwerly/public/stylesheets'
 let g:netrw_dirhist_6='/Users/mariusz'
+let g:netrw_dirhist_7='/Users/mariusz/Documents/workspace/qwerly/app/qwerly/app/views/layouts'
+let g:netrw_dirhist_8='/Users/mariusz/Documents/workspace/qwerly/app/qwerly'
+let g:netrw_dirhist_9='/Users/mariusz'
