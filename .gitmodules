@@ -4,9 +4,6 @@
 [submodule ".vim/bundles/vim-haml"]
 	path = .vim/bundles/vim-haml
 	url = git://github.com/tpope/vim-haml.git
-[submodule ".vim/bundles/snipmate"]
-	path = .vim/bundles/snipmate
-	url = git://github.com/msanders/snipmate.vim.git
 [submodule ".vim/bundles/nerdtree"]
 	path = .vim/bundles/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
@@ -25,3 +22,6 @@
 [submodule ".vim/bundles/vim-endwise"]
 	path = .vim/bundles/vim-endwise
 	url = https://github.com/tpope/vim-endwise.git
+[submodule ".vim/bundles/snipMate"]
+	path = .vim/bundles/snipMate
+	url = https://github.com/msanders/snipmate.vim.git
