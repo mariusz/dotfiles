@@ -48,6 +48,7 @@ au FocusLost * :wa
 
 " Split windows
 nnoremap <leader>w <C-w>v<C-w>1
+nnoremap <D-w> <C-w>v<C-w>1<CR>
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k

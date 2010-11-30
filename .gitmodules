@@ -25,3 +25,9 @@
 [submodule ".vim/bundles/snipMate"]
 	path = .vim/bundles/snipMate
 	url = https://github.com/msanders/snipmate.vim.git
+[submodule ".vim/bundles/vim-vividchalk"]
+	path = .vim/bundles/vim-vividchalk
+	url = https://github.com/tpope/vim-vividchalk.git
+[submodule ".vim/bundle/nerdcommenter"]
+	path = .vim/bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
