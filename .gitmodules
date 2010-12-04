@@ -31,3 +31,6 @@
 [submodule ".vim/bundle/nerdcommenter"]
 	path = .vim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule ".vim/bundle/scss-syntax"]
+	path = .vim/bundle/scss-syntax
+	url = git://github.com/cakebaker/scss-syntax.vim.git
