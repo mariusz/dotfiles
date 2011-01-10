@@ -34,3 +34,6 @@
 [submodule ".vim/bundle/scss-syntax"]
 	path = .vim/bundle/scss-syntax
 	url = git://github.com/cakebaker/scss-syntax.vim.git
+[submodule ".vim/bundle/taskpaper"]
+	path = .vim/bundle/taskpaper
+	url = git://github.com/davidoc/taskpaper.vim.git
