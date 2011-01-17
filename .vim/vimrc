@@ -137,3 +137,10 @@ if has("gui_running") && system('ps xw | grep "Vim -psn" | grep -vc grep') > 0
   endif
 endif
 
+" Tabular
+if exists(":Tabularize")
+  nmap <Leader>a= :Tabularize /=<CR>
+  vmap <Leader>a= :Tabularize /=<CR>
+  nmap <Leader>a: :Tabularize /:\zs<CR>
+  vmap <Leader>a: :Tabularize /:\zs<CR>
+endif
