@@ -1,0 +1,19 @@
+index.php, archive.php, search.php
+	- added function for conditional page/post navigation links
+
+page.php
+	- added <p> </p> to edit_post_link()
+	
+single.php
+	- moved <?php comments_template(); ?> inside the main <article> element
+	
+comments.php
+	- added type=url to the website field.
+    - removed <small> elements from the labels.
+    - removed tabindex from the form fields.
+    - added required to comment box.
+    - comments are now wrapped an <article> element
+    
+sidebar.php
+	- added <nav> </nav> to the pages, archives and categories links.
+	
