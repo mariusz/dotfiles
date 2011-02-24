@@ -30,7 +30,7 @@ zmodload -a zsh/zprof zprof
 zmodload -ap zsh/mapfile mapfile
 
 
-PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+PATH="/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 #TZ="America/New_York"
 HISTFILE=$HOME/.zhistory
 HISTSIZE=1000
@@ -170,5 +170,6 @@ zstyle '*' single-ignored show
 export PS1="$(print '%{\e[1;32m%}%T%{\e[0m%}') %~%# "
 
 export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/lib/mysql5/bin:$PATH
-
+export CLICOLOR=1
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
