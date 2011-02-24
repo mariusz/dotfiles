@@ -2,7 +2,7 @@
 filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
-filetype on
+filetype indent on
 
 " Syntax & colors
 syntax on
@@ -167,4 +167,30 @@ else
   nmap gcc guu~h
   vmap gc gu~h
 endif
+
+" ZenCoding
+let g:user_zen_settings = {
+\  'indentation' : '  ',
+\  'php' : {
+\    'extends' : 'html',
+\    'filters' : 'c',
+\  },
+\  'xml' : {
+\    'extends' : 'html',
+\  },
+\  'haml' : {
+\    'extends' : 'html',
+\  },
+\  'less' : {
+\    'extends' : 'css',
+\  },
+\ 'sass' : {
+\    'extends' : 'css',
+\ },
+\}
+
+let g:user_zen_expandabbr_key = '<D-e>'
+
+let g:use_zen_complete_tag = 1
+
 
