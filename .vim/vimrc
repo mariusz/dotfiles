@@ -6,7 +6,7 @@ filetype indent on
 
 " Syntax & colors
 syntax on
-colors sunburst
+colors zenburn
 
 " Tabs
 set tabstop=2
