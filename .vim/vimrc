@@ -184,12 +184,12 @@ let g:user_zen_settings = {
 \  'less' : {
 \    'extends' : 'css',
 \  },
-\ 'sass' : {
+\  'sass' : {
 \    'extends' : 'css',
-\ },
+\  },
 \}
 
-let g:user_zen_expandabbr_key = '<D-e>'
+let g:user_zen_leader_key = '<D-e>'
 
 let g:use_zen_complete_tag = 1
 
