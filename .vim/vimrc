@@ -15,8 +15,7 @@ set softtabstop=2
 set expandtab
 
 " Ack
-set grepprg=ack
-set grepformat=%f:%l:%m
+set grepprg=rak
 
 " Encoding
 set encoding=utf-8
@@ -91,6 +90,11 @@ au BufRead,BufNewFile {Gemfile,Rakefile,Thorfile,config.ru,Rules} set ft=ruby
 
 " Leader key
 let mapleader=","
+
+" Backup & swaps
+set backup
+set backupdir=~/.vim/backup
+set directory=~/.vim/tmp
 
 " NERD tree
 map <silent> <F2> <ESC>:NERDTreeToggle<CR>
