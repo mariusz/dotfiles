@@ -1,1 +1,4 @@
+.vim/bundle/*
 .netrwhist
+.vim/tmp/*
+.vim/backup/*

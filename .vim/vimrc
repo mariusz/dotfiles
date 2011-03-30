@@ -1,8 +1,26 @@
-" Pathogen
-filetype off
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-filetype indent on
+" Vundle
+set rtp+=~/.vim/vundle.git/ 
+call vundle#rc()
+
+filetype plugin indent on
+
+" Bundles
+Bundle 'https://github.com/mileszs/ack.vim.git'
+Bundle 'https://github.com/tpope/vim-endwise.git'
+Bundle 'https://github.com/tpope/vim-rails.git'
+Bundle 'https://github.com/tpope/vim-haml.git'
+Bundle 'https://github.com/scrooloose/nerdtree.git'
+Bundle 'https://github.com/tpope/vim-markdown.git'
+Bundle 'https://github.com/msanders/snipmate.vim.git'
+Bundle 'https://github.com/cakebaker/scss-syntax.vim.git'
+Bundle 'https://github.com/davidoc/taskpaper.vim.git'
+Bundle 'https://github.com/tpope/vim-surround.git'
+Bundle 'https://github.com/tpope/vim-fugitive.git'
+Bundle 'https://github.com/mattn/zencoding-vim.git'
+Bundle 'https://github.com/duff/vim-scratch.git'
+Bundle 'https://github.com/kogent/vim-peepopen.git'
+Bundle 'https://github.com/godlygeek/tabular.git'
+Bundle 'https://github.com/ddollar/nerdcommenter.git'
 
 " Syntax & colors
 syntax on
@@ -42,6 +60,9 @@ nnoremap k gk
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
+
+" jj
+imap jj <Esc>
 
 " ; == :
 nnoremap ; :
