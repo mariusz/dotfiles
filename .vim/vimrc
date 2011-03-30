@@ -14,6 +14,10 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 
+" Ack
+set grepprg=ack
+set grepformat=%f:%l:%m
+
 " Encoding
 set encoding=utf-8
 
@@ -26,7 +30,7 @@ set showmatch
 set hlsearch
 
 " Handle long lines
-set wrap 
+set wrap
 set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=81
@@ -41,7 +45,7 @@ nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
 " ; == :
-" nnoremap ; :
+nnoremap ; :
 
 " Save on tab-out
 au FocusLost * :wa
@@ -193,4 +197,14 @@ let g:user_zen_leader_key = '<D-e>'
 
 let g:use_zen_complete_tag = 1
 
+" Scratch.vim
+function! ToggleScratch()
+  if expand('%') == g:ScratchBufferName
+    quit
+  else
+    Sscratch
+  endif
+endfunction
+
+map <leader>s :call ToggleScratch()<CR>
 
