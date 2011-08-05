@@ -22,6 +22,7 @@ Bundle 'https://github.com/kogent/vim-peepopen.git'
 Bundle 'https://github.com/godlygeek/tabular.git'
 Bundle 'https://github.com/ddollar/nerdcommenter.git'
 Bundle 'https://github.com/robgleeson/vim-markdown-preview.git'
+Bundle 'https://github.com/altercation/vim-colors-solarized'
 
 " Syntax & colors
 syntax on
@@ -54,8 +55,8 @@ set formatoptions=qrn1
 set colorcolumn=81
 
 " Moving around
-nnoremap j gj
-nnoremap k gk
+nmap j gj
+nmap k gk
 
 " F1 annoyance
 inoremap <F1> <ESC>
@@ -72,12 +73,12 @@ nnoremap ; :
 au FocusLost * :wa
 
 " Split windows
-nnoremap <leader>w <C-w>v<C-w>1
-nnoremap <D-w> <C-w>v<C-w>1<CR>
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+nmap <leader>w <C-w>v<C-w>1
+nmap <D-w> <C-w>v<C-w>1<CR>
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
 
 " Folding settings
 set foldmethod=indent   "indent based on syntax
@@ -126,12 +127,12 @@ nmap <silent> <leader>ft :NERDTreeFind<CR>
 map <silent> <D-t> <leader>p
 
 " Move line(s) of text using Alt+j/k
-nnoremap <silent> <A-j> :m+<CR>==
-nnoremap <silent> <A-k> :m-2<CR>==
-inoremap <silent> <A-j> <Esc>:m+<CR>==gi
-inoremap <silent> <A-k> <Esc>:m-2<CR>==gi
-vnoremap <silent> <A-j> :m'>+<CR>gv=gv
-vnoremap <silent> <A-k> :m-2<CR>gv=gv
+nmap <silent> <A-j> :m+<CR>==
+nmap <silent> <A-k> :m-2<CR>==
+imap <silent> <A-j> <Esc>:m+<CR>==gi
+imap <silent> <A-k> <Esc>:m-2<CR>==gi
+vmap <silent> <A-j> :m'>+<CR>gv=gv
+vmap <silent> <A-k> :m-2<CR>gv=gv
 
 " Preserve selection when indenting
 vmap > >gv
