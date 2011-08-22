@@ -56,6 +56,8 @@ else
   MUTT_EDITOR=emacsclient.emacs-snapshot
 fi
 
+NODE_PATH=/usr/local/lib/node
+
 unsetopt ALL_EXPORT
 # # --------------------------------------------------------------------
 # # aliases
