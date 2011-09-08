@@ -22,6 +22,7 @@ Bundle 'https://github.com/kogent/vim-peepopen.git'
 Bundle 'https://github.com/godlygeek/tabular.git'
 Bundle 'https://github.com/ddollar/nerdcommenter.git'
 Bundle 'https://github.com/robgleeson/vim-markdown-preview.git'
+Bundle 'https://github.com/altercation/vim-colors-solarized.git'
 
 " Syntax & colors
 syntax on
