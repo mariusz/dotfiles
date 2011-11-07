@@ -23,6 +23,7 @@ Bundle 'https://github.com/godlygeek/tabular.git'
 Bundle 'https://github.com/ddollar/nerdcommenter.git'
 Bundle 'https://github.com/robgleeson/vim-markdown-preview.git'
 Bundle 'https://github.com/altercation/vim-colors-solarized.git'
+"Bundle 'https://github.com/immerzeel/vim-remember-the-milk.git'
 
 " Syntax & colors
 syntax on
@@ -234,4 +235,13 @@ function! ToggleScratch()
 endfunction
 
 map <leader>s :call ToggleScratch()<CR>
+
+" Always show line numbers, but only in current window.
+set number
+:au WinEnter * :setlocal number
+:au WinLeave * :setlocal nonumber
+
+" Automatically resize vertical splits.
+:au WinEnter * :set winfixheight
+:au WinEnter * :wincmd =
 
