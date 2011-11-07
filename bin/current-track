@@ -1,2 +1,6 @@
 #!/bin/sh
-osascript ~/vimfiles/scripts/current-track.scpt
+if [[ -z "${VIMFILES}" ]]; then
+  VIMFILES="$HOME/vimfiles" # if no $VIMFILES then assume $HOME/vimfiles
+fi
+
+osascript $VIMFILES/scripts/current-track.scpt
