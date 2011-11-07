@@ -17,4 +17,9 @@ to your home directory:
 After you're done, run your Vim and exec `:BundleInstall` command to install
 all the plugins. 
 
+If you want to make tmux work with the current track script (unfortunately 
+currently Mac & Spotify only), you will need to do
+
+    export VIMFILES=your/vimfiles/dir
+
 **Happy vimming!**
