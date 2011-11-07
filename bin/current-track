@@ -1,0 +1,2 @@
+#!/bin/sh
+osascript ~/vimfiles/scripts/current-track.scpt
