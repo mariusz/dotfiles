@@ -242,6 +242,6 @@ set number
 :au WinLeave * :setlocal nonumber
 
 " Automatically resize vertical splits.
-:au WinEnter * :set winfixheight
+:au WinEnter * :set winfixwidth
 :au WinEnter * :wincmd =
 
