@@ -23,6 +23,8 @@ Bundle 'https://github.com/godlygeek/tabular.git'
 Bundle 'https://github.com/ddollar/nerdcommenter.git'
 Bundle 'https://github.com/robgleeson/vim-markdown-preview.git'
 Bundle 'https://github.com/altercation/vim-colors-solarized.git'
+Bundle 'https://github.com/mr-szymanski/prefixr.git'
+Bundle 'https://github.com/kchmck/vim-coffee-script.git'
 "Bundle 'https://github.com/immerzeel/vim-remember-the-milk.git'
 
 " Syntax & colors
@@ -112,6 +114,10 @@ set backspace=indent,eol,start
 " These file are ruby!
 au BufRead,BufNewFile {Gemfile,Rakefile,Thorfile,config.ru,Rules} set ft=ruby
 
+" ...and these are CoffeeScript!
+au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+
 " Leader key
 let mapleader=","
 
@@ -170,12 +176,10 @@ if has("gui_running") && system('ps xw | grep "Vim -psn" | grep -vc grep') > 0
 endif
 
 " Tabular
-if exists(":Tabularize")
-  nmap <Leader>a= :Tabularize /=<CR>
-  vmap <Leader>a= :Tabularize /=<CR>
-  nmap <Leader>a: :Tabularize /:\zs<CR>
-  vmap <Leader>a: :Tabularize /:\zs<CR>
-endif
+nmap <Leader>a= :Tabularize /=<CR>
+vmap <Leader>a= :Tabularize /=<CR>
+nmap <Leader>a: :Tabularize /:\zs<CR>
+vmap <Leader>a: :Tabularize /:\zs<CR>
 
 " Capitalize
 if (&tildeop)
@@ -199,6 +203,8 @@ else
   nmap gcc guu~h
   vmap gc gu~h
 endif
+
+vmap <Leader>w :Prefixr<CR>
 
 " ZenCoding
 let g:user_zen_settings = {
