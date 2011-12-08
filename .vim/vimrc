@@ -163,6 +163,7 @@ endif
 
 " Less CSS is awesome.
 au BufNewFile,BufRead *.less set filetype=less
+au BufNewFile,BufRead *.coffee set filetype=coffee
 
 if has("gui_running") && system('ps xw | grep "Vim -psn" | grep -vc grep') > 0
   " Get the value of $PATH from a login shell.
