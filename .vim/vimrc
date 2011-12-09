@@ -25,6 +25,8 @@ Bundle 'robgleeson/vim-markdown-preview.git'
 Bundle 'altercation/vim-colors-solarized.git'
 Bundle 'mr-szymanski/prefixr.git'
 Bundle 'kchmck/vim-coffee-script.git'
+Bundle 'mhz/vim-matchit.git'
+Bundle 'tpope/vim-abolish.git'
 "Bundle 'immerzeel/vim-remember-the-milk.git'
 
 " Syntax & colors
