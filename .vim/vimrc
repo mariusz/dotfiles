@@ -1,5 +1,5 @@
 " Vundle
-set rtp+=~/.vim/vundle/ 
+set rtp+=~/.vim/vundle.git/ 
 call vundle#rc()
 
 filetype plugin indent on
