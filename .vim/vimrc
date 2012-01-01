@@ -31,6 +31,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-abolish'
 Bundle 'vim-scripts/jade.vim'
 Bundle 'vim-scripts/matchit.zip'
+Bundle 'wavded/vim-stylus'
 
 " Syntax & colors
 syntax on
@@ -122,6 +123,10 @@ au BufRead,BufNewFile {Gemfile,Rakefile,Thorfile,config.ru,Rules} set ft=ruby
 " ...and these are CoffeeScript!
 au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
 au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+
+" ...and these are Jade!
+au BufNewFile,BufReadPost *.jade set ft=jade
+au BufNewFile,BufReadPost *.styl set ft=stylus
 
 " Leader key
 let mapleader=","
