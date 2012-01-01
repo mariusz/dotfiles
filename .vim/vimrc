@@ -1,32 +1,36 @@
 " Vundle
-set rtp+=~/.vim/vundle.git/ 
+set rtp+=~/.vim/vundle/ 
 call vundle#rc()
 
 filetype plugin indent on
 
 " Bundles
-Bundle 'mileszs/ack.vim.git'
-Bundle 'tpope/vim-endwise.git'
-Bundle 'tpope/vim-rails.git'
-Bundle 'tpope/vim-haml.git'
-Bundle 'bbommarito/vim-slim.git'
-Bundle 'scrooloose/nerdtree.git'
-Bundle 'tpope/vim-markdown.git'
-Bundle 'msanders/snipmate.vim.git'
-Bundle 'cakebaker/scss-syntax.vim.git'
-Bundle 'tpope/vim-surround.git'
-Bundle 'tpope/vim-fugitive.git'
-Bundle 'mattn/zencoding-vim.git'
-Bundle 'duff/vim-scratch.git'
-Bundle 'kogent/vim-peepopen.git'
-Bundle 'godlygeek/tabular.git'
-Bundle 'ddollar/nerdcommenter.git'
-Bundle 'robgleeson/vim-markdown-preview.git'
-Bundle 'altercation/vim-colors-solarized.git'
-Bundle 'mr-szymanski/prefixr.git'
-Bundle 'kchmck/vim-coffee-script.git'
-Bundle 'mhz/vim-matchit.git'
-Bundle 'tpope/vim-abolish.git'
+" Let Vundle manage itself!
+Bundle 'gmarik/vundle'
+
+" Rest of the bundles
+Bundle 'mileszs/ack.vim'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-haml'
+Bundle 'bbommarito/vim-slim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-markdown'
+Bundle 'msanders/snipmate.vim'
+Bundle 'cakebaker/scss-syntax.vim'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-fugitive'
+Bundle 'mattn/zencoding-vim'
+Bundle 'duff/vim-scratch'
+Bundle 'kogent/vim-peepopen'
+Bundle 'godlygeek/tabular'
+Bundle 'ddollar/nerdcommenter'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'mr-szymanski/prefixr'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'tpope/vim-abolish'
+Bundle 'vim-scripts/jade.vim'
+Bundle 'vim-scripts/matchit.zip'
 
 " Syntax & colors
 syntax on
@@ -124,6 +128,7 @@ let mapleader=","
 
 " Backup & swaps
 set nobackup
+set noswapfile
 set nowritebackup
 set directory=~/.vim/tmp
 
