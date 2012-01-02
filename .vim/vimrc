@@ -35,7 +35,14 @@ Bundle 'wavded/vim-stylus'
 
 " Syntax & colors
 syntax on
+set background=dark
 colors solarized
+
+" Use Mustang in the terminal, Sunburst doesn't
+" quite cut it.
+if !has("gui_running")
+  colors mustang
+endif
 
 " Tabs
 set tabstop=2
