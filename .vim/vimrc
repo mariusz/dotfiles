@@ -187,6 +187,12 @@ if has("gui_running") && system('ps xw | grep "Vim -psn" | grep -vc grep') > 0
   endif
 endif
 
+"Show invisibles
+nmap <leader>l :set list!<CR>
+set listchars=tab:▸\ ,eol:¬
+highlight NonText guifg=#4a4a59
+highlight SpecialKey guifg=#4a4a59
+
 " Tabular
 nmap <Leader>a= :Tabularize /=<CR>
 vmap <Leader>a= :Tabularize /=<CR>
