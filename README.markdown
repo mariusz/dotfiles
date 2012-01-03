@@ -15,7 +15,8 @@ to your home directory:
     ln -s ~/vimfiles/.gvimrc ~/.gvimrc
 
 After you're done, run your Vim and exec `:BundleInstall` command to install
-all the plugins. 
+all the plugins. You'll probably need to `:source ~/.vimrc` or restart your
+Vim after that. 
 
 If you want to make tmux work with the current track script (unfortunately 
 currently Mac & Spotify only), you will need to do
