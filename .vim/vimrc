@@ -32,6 +32,8 @@ Bundle 'tpope/vim-abolish'
 Bundle 'vim-scripts/jade.vim'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'wavded/vim-stylus'
+Bundle 'sickill/vim-pasta'
+Bundle 'juvenn/mustache.vim'
 
 " Syntax & colors
 syntax on
@@ -130,6 +132,9 @@ au BufRead,BufNewFile {Gemfile,Rakefile,Thorfile,config.ru,Rules} set ft=ruby
 " ...and these are CoffeeScript!
 au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
 au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+
+" ...and these are Mustache!
+au BufNewFile,BufReadPost *.mustache.erb set ft=mustache
 
 " ...and these are Jade!
 au BufNewFile,BufReadPost *.jade set ft=jade
@@ -230,6 +235,9 @@ else
 endif
 
 vmap <Leader>w :Prefixr<CR>
+
+" Fix indentation of ALL THE ONELINERS!
+nmap <leader>= :%s/;\s$/;\r/e<CR>:%s/;}/;\r}/e<CR>gg=G
 
 " ZenCoding
 let g:user_zen_settings = {
