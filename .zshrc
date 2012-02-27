@@ -168,6 +168,7 @@ zstyle ':completion:*:ssh:*' group-order \
    hosts-domain hosts-host users hosts-ipaddr
 zstyle '*' single-ignored show
 
+eval "$(juke autocompletion)"
 
 # prompt
 export PS1="$(print '%{\e[1;32m%}%T%{\e[0m%}') %~%# "
