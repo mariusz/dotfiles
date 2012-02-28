@@ -26,6 +26,7 @@ Bundle 'kogent/vim-peepopen'
 Bundle 'godlygeek/tabular'
 Bundle 'ddollar/nerdcommenter'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'nanotech/jellybeans.vim'
 Bundle 'mr-szymanski/prefixr'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-abolish'
@@ -38,12 +39,12 @@ Bundle 'juvenn/mustache.vim'
 " Syntax & colors
 syntax on
 set background=dark
-colors solarized
+colors jellybeans
 
-" Use Mustang in the terminal, Sunburst doesn't
-" quite cut it.
+" In case you want different theme for
+" the non-GUI Vim.
 if !has("gui_running")
-  colors mustang
+  colors jellybeans
 endif
 
 " Tabs
