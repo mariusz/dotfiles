@@ -95,13 +95,7 @@ chatnets = {
     max_whois = "30";
   };
   SILC = { type = "SILC"; };
-  FreeNode = {
-    type = "IRC";
-    nick = "dotmariusz";
-    username = "mariusz";
-    realname = "Mariusz";
-    autosendcmd = "/msg nickserv identify kaliber44;wait 2000";
-  };
+  Freenode = { type = "IRC"; };
 };
 
 channels = (
