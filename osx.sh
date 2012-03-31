@@ -1,3 +1,5 @@
+#!/bin/sh
+
 defaults write com.apple.dock no-glass -bool true
 defaults write NSGlobalDomain AppleFontSmoothing -int 1
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
