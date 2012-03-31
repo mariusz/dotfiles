@@ -272,4 +272,5 @@ settings = {
   };
   "fe-text" = { actlist_sort = "refnum"; };
   "fe-common/core" = { theme = "mrooveq"; };
+  "perl/core/scripts" = { lastfm_user = "corin"; };
 };

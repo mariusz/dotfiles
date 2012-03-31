@@ -2,8 +2,6 @@
 set rtp+=~/.vim/vundle/ 
 call vundle#rc()
 
-filetype plugin indent on
-
 " Bundles
 " Let Vundle manage itself!
 Bundle 'gmarik/vundle'
@@ -35,6 +33,7 @@ Bundle 'vim-scripts/matchit.zip'
 Bundle 'wavded/vim-stylus'
 Bundle 'sickill/vim-pasta'
 Bundle 'juvenn/mustache.vim'
+Bundle 'aaronbieber/quicktask'
 
 " Syntax & colors
 syntax on
@@ -280,3 +279,4 @@ if has("gui_macvim")
   let macvim_hig_shift_movement = 1
 endif
 
+filetype plugin indent on
