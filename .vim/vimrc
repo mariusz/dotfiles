@@ -34,7 +34,8 @@ Bundle 'wavded/vim-stylus'
 Bundle 'sickill/vim-pasta'
 Bundle 'juvenn/mustache.vim'
 Bundle 'aaronbieber/quicktask'
-Bundle 'vim-scripts/Rainbow-Parenthesis.git'
+Bundle 'vim-scripts/Rainbow-Parenthesis'
+Bundle 'vim-scripts/vim-pomodoro'
 
 " Syntax & colors
 syntax on
