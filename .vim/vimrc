@@ -119,6 +119,7 @@ set statusline+=\
 set statusline+=%y      "filetype
 set statusline+=%r      "read only flag
 set statusline+=%1*%m%*      "modified flag
+set statusline+=%{fugitive#statusline()} "Git status
 set statusline+=%=      "left/right aligned items separated
 set statusline+=%#warningmsg#
 set statusline+=%*\ 
