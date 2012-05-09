@@ -6,7 +6,7 @@ echo "✓ Enable 2D dock"
 defaults write com.apple.dock no-glass -bool true
 
 echo "✓ Enable Apple font-smoothing on non-Apple displays"
-defaults write NSGlobalDomain AppleFontSmoothing -int 2
+defaults write NSGlobalDomain AppleFontSmoothing -int 3
 
 echo "✓ Enable tab switching in modal windows and other keyboard navigation perks"
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3

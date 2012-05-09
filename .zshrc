@@ -37,7 +37,7 @@ HISTSIZE=1000
 SAVEHIST=1000
 HOSTNAME="`hostname`"
 PAGER='less'
-EDITOR='mvim -f'
+EDITOR='vim'
     autoload colors zsh/terminfo
     if [[ "$terminfo[colors]" -ge 8 ]]; then
    colors
