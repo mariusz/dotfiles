@@ -72,7 +72,7 @@ set hlsearch
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-set colorcolumn=81
+" set colorcolumn=81
 
 " Moving around
 nmap j gj
