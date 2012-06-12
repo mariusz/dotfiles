@@ -300,6 +300,6 @@ if main_syntax == 'less'
   unlet main_syntax
 endif
 
-
+runtime plugin/RainbowParenthsis.vim
 " vim: ts=8
 
