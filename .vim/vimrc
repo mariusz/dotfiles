@@ -36,6 +36,7 @@ Bundle 'juvenn/mustache.vim'
 Bundle 'aaronbieber/quicktask'
 Bundle 'vim-scripts/Rainbow-Parenthesis'
 Bundle 'vim-scripts/vim-pomodoro'
+Bundle 'nathanaelkane/vim-indent-guides.git'
 
 " Syntax & colors
 syntax on
