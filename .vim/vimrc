@@ -36,13 +36,14 @@ Bundle 'juvenn/mustache.vim'
 Bundle 'aaronbieber/quicktask'
 Bundle 'vim-scripts/Rainbow-Parenthesis'
 Bundle 'vim-scripts/vim-pomodoro'
-Bundle 'nathanaelkane/vim-indent-guides.git'
-Bundle 'Lokaltog/vim-powerline.git'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'vim-scripts/candycode.vim'
 
 " Syntax & colors
 syntax on
 set background=dark
-colors jellybeans
+colors candycode
 
 " In case you want different theme for
 " the non-GUI Vim.
