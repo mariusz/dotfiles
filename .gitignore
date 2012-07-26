@@ -2,3 +2,4 @@
 .netrwhist
 .vim/tmp/*
 .vim/backup/*
+.DS_Store
