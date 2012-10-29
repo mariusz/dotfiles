@@ -1,0 +1,5 @@
+[alias]
+  s = status
+  a = add
+  ci = commit
+  pr = pull --rebase
