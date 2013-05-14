@@ -48,7 +48,7 @@ colors candycode
 " In case you want different theme for
 " the non-GUI Vim.
 if !has("gui_running")
-  colors jellybeans
+  colors candycode
 endif
 
 " Tabs
