@@ -10,6 +10,17 @@ ZSH_THEME="mariusz"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias gc="git commit -a"
+alias gs="git status"
+alias gpm="git pull --rebase origin master"
+
+function gp {
+  git pull --rebase origin $*
+}
+
+function gm {
+  git merge $*
+}
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
