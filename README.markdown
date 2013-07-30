@@ -23,4 +23,8 @@ currently Mac & Spotify only), you will need to do
 
     export VIMFILES=your/vimfiles/dir
 
+## Go support
+
+For working Go support, you need to set `$GOROOT` in your config.
+
 **Happy vimming!**
