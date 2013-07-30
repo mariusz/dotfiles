@@ -148,6 +148,9 @@ au BufNewFile,BufReadPost *.mustache.erb set ft=mustache
 au BufNewFile,BufReadPost *.jade set ft=jade
 au BufNewFile,BufReadPost *.styl set ft=stylus
 
+" ...and these are Go!
+au BufRead,BufNewFile *.go set filetype=go
+
 " Leader key
 let mapleader=","
 

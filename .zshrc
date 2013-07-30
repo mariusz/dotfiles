@@ -11,16 +11,16 @@ ZSH_THEME="mariusz"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gc="git commit -a"
+alias gca="git commit -a"
+alias ga="git add"
 alias gs="git status"
-alias gpm="git pull --rebase origin master"
-
-function gp {
-  git pull --rebase origin $*
-}
-
-function gm {
-  git merge $*
-}
+alias gp="git push"
+alias gm="git merge"
+alias g="git"
+alias gprm="git pull --rebase origin master"
+alias gpr="git pull --rebase"
+alias gr="git rebase"
+alias grc="git rebase --continue"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -51,12 +51,17 @@ function gm {
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx rails ruby)
+plugins=(git osx rails ruby rbenv bundler)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+export GOROOT=/usr/local/bin/go
+export GOPATH=$HOME/go
+
+export RBENV_ROOT=/usr/local/var/rbenv
+
 export NODE_PATH=/usr/local/lib/node
 
-export PATH=$PATH:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:$HOME/.rbenv/shims:/opt/local/bin:/opt/local/sbin:/opt/local/lib/mysql5/bin:$HOME/.rbenv/bin:/usr/local/share/npm/bin
+export PATH=/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$RBENV_ROOT/shims:/opt/local/bin:/opt/local/sbin:/opt/local/lib/mysql5/bin:$RBENV_ROOT/bin:/usr/local/share/npm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/go/bin:/usr/bin:/usr/sbin:/bin:/sbin:$PATH:$GOPATH/bin
