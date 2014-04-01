@@ -18,6 +18,7 @@ alias gp="git push"
 alias gm="git merge"
 alias g="git"
 alias gprm="git pull --rebase origin master"
+alias gprd="git pull --rebase origin develop"
 alias gpr="git pull --rebase"
 alias gr="git rebase"
 alias grc="git rebase --continue"
@@ -64,10 +65,10 @@ export RBENV_ROOT=~/.rbenv
 
 export NODE_PATH=/usr/local/lib/node
 
-export PATH=/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/go/bin:/usr/bin:/usr/sbin:/bin:/sbin:$HOME/.rbenv/bin:$PATH:$GOPATH/bin
+export PATH=$RBENV_ROOT/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/go/bin:/usr/bin:/usr/sbin:/bin:/sbin:$GOPATH/bin
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+eval "$(rbenv init -)"
