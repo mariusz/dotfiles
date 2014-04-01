@@ -51,17 +51,23 @@ alias grc="git rebase --continue"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx rails ruby rbenv bundler)
 
+plugins=(git osx rails ruby rbenv bundler)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-export GOROOT=/usr/local/bin/go
 export GOPATH=$HOME/go
+export GOROOT=/usr/local/go
 
-export RBENV_ROOT=/usr/local/var/rbenv
+export RBENV_ROOT=~/.rbenv
 
 export NODE_PATH=/usr/local/lib/node
 
-export PATH=/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$RBENV_ROOT/shims:/opt/local/bin:/opt/local/sbin:/opt/local/lib/mysql5/bin:$RBENV_ROOT/bin:/usr/local/share/npm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/go/bin:/usr/bin:/usr/sbin:/bin:/sbin:$PATH:$GOPATH/bin
+export PATH=/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/go/bin:/usr/bin:/usr/sbin:/bin:/sbin:$HOME/.rbenv/bin:$PATH:$GOPATH/bin
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

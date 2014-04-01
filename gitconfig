@@ -1,0 +1,15 @@
+[user]
+	name = Mariusz Ciesla
+	email = mariusz@dotmariusz.net
+[push]
+  default = matching
+[alias]
+  ci = commit
+  co = checkout
+  pr = pull --rebase
+  p = push
+  pom = push origin master
+  st = stash
+  stp = stash pop
+  rc = rebase --continue
+  rs = rebase --skip
