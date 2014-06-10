@@ -37,6 +37,7 @@ Bundle 'vim-scripts/vim-pomodoro'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'Lokaltog/powerline'
 Bundle 'vim-scripts/candycode.vim'
+Bundle 'slim-template/vim-slim'
 
 " Setting up Powerline
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
