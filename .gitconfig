@@ -12,3 +12,7 @@
 	pr = pull --rebase
 	pu = pull
 	p = push
+	pom = push origin master
+	rc = rebase --continue
+	rs = rebase --skip
+	ra = rebase --abort
