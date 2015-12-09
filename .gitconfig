@@ -3,3 +3,12 @@
 # Please adapt and uncomment the following lines:
 	name = Mariusz Ciesla
 	email = mariusz@dotmariusz.net
+
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	pr = pull --rebase
+	pu = pull
+	p = push
