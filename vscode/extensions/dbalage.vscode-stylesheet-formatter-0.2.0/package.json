@@ -1,0 +1,87 @@
+{
+	"__metadata": {
+		"galleryApiUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+		"id": "052d15e4-ebf2-44dc-a189-a1b927c2865a",
+		"publisherId": "ae405759-f918-4d38-a95f-685ddb088da7",
+		"publisherDisplayName": "Balazs Deak",
+		"installCount": 1948,
+		"versions": [
+			{
+				"version": "0.2.0",
+				"date": "2016-04-07T14:38:15.57Z",
+				"downloadHeaders": {
+					"X-Market-Client-Id": "VSCode 1.2.1",
+					"User-Agent": "VSCode 1.2.1",
+					"X-Market-User-Id": "16fffc193dc3e561603bf6557fbaa40c93641c8793fdac7e1820dfa5f9988e57"
+				},
+				"downloadUrl": "https://dbalage.gallery.vsassets.io/_apis/public/gallery/publisher/dbalage/extension/vscode-stylesheet-formatter/0.2.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage?install=true",
+				"manifestUrl": "https://dbalage.gallery.vsassets.io/_apis/public/gallery/publisher/dbalage/extension/vscode-stylesheet-formatter/0.2.0/assetbyname/Microsoft.VisualStudio.Code.Manifest"
+			},
+			{
+				"version": "0.1.0",
+				"date": "2016-04-07T14:14:45.9Z",
+				"downloadHeaders": {
+					"X-Market-Client-Id": "VSCode 1.2.1",
+					"User-Agent": "VSCode 1.2.1",
+					"X-Market-User-Id": "16fffc193dc3e561603bf6557fbaa40c93641c8793fdac7e1820dfa5f9988e57"
+				},
+				"downloadUrl": "https://dbalage.gallery.vsassets.io/_apis/public/gallery/publisher/dbalage/extension/vscode-stylesheet-formatter/0.1.0/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage?install=true",
+				"manifestUrl": "https://dbalage.gallery.vsassets.io/_apis/public/gallery/publisher/dbalage/extension/vscode-stylesheet-formatter/0.1.0/assetbyname/Microsoft.VisualStudio.Code.Manifest"
+			},
+			{
+				"version": "0.0.1",
+				"date": "2016-04-07T14:08:47.797Z",
+				"downloadHeaders": {
+					"X-Market-Client-Id": "VSCode 1.2.1",
+					"User-Agent": "VSCode 1.2.1",
+					"X-Market-User-Id": "16fffc193dc3e561603bf6557fbaa40c93641c8793fdac7e1820dfa5f9988e57"
+				},
+				"downloadUrl": "https://dbalage.gallery.vsassets.io/_apis/public/gallery/publisher/dbalage/extension/vscode-stylesheet-formatter/0.0.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage?install=true",
+				"manifestUrl": "https://dbalage.gallery.vsassets.io/_apis/public/gallery/publisher/dbalage/extension/vscode-stylesheet-formatter/0.0.1/assetbyname/Microsoft.VisualStudio.Code.Manifest"
+			}
+		]
+	},
+	"name": "vscode-stylesheet-formatter",
+	"displayName": "Stylesheet Formatter",
+	"description": "Formatter for CSS, SASS, LESS",
+	"version": "0.2.0",
+	"publisher": "dbalage",
+	"icon": "images/logo.png",
+	"galleryBanner": {
+		"color": "#eff1f3",
+		"theme": "light"
+	},
+	"categories": [
+		"Languages",
+		"Other"
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/dbalage/vscode-css-formatter/issues"
+	},
+	"homepage": "https://github.com/dbalage/vscode-css-formatter/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dbalage/vscode-css-formatter"
+	},
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"activationEvents": [
+		"onLanguage:css",
+		"onLanguage:sass",
+		"onLanguage:less"
+	],
+	"main": "./out/src/extension",
+	"scripts": {
+		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
+	},
+	"dependencies": {
+		"js-beautify": "^1.6.2"
+	},
+	"devDependencies": {
+		"typescript": "*",
+		"vscode": "0.11.x"
+	}
+}

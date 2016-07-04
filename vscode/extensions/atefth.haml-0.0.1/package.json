@@ -1,0 +1,55 @@
+{
+	"__metadata": {
+		"galleryApiUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+		"id": "d310d698-60e2-47d8-805a-85b6e48fecc5",
+		"publisherId": "73800096-beb7-414d-9283-e8f2d4b9c031",
+		"publisherDisplayName": "Atef Haque",
+		"installCount": 181,
+		"versions": [
+			{
+				"version": "0.0.1",
+				"date": "2016-03-25T03:57:14.333Z",
+				"downloadHeaders": {
+					"X-Market-Client-Id": "VSCode 1.2.1",
+					"User-Agent": "VSCode 1.2.1",
+					"X-Market-User-Id": "16fffc193dc3e561603bf6557fbaa40c93641c8793fdac7e1820dfa5f9988e57"
+				},
+				"downloadUrl": "https://atefth.gallery.vsassets.io/_apis/public/gallery/publisher/atefth/extension/haml/0.0.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage?install=true",
+				"manifestUrl": "https://atefth.gallery.vsassets.io/_apis/public/gallery/publisher/atefth/extension/haml/0.0.1/assetbyname/Microsoft.VisualStudio.Code.Manifest"
+			}
+		]
+	},
+	"name": "haml",
+	"displayName": "haml-syntax",
+	"description": "Syntax highlighting for HAML",
+	"version": "0.0.1",
+	"publisher": "atefth",
+	"engines": {
+		"vscode": "^0.10.10"
+	},
+	"categories": [
+		"Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "haml",
+				"aliases": [
+					"Ruby Haml",
+					"haml"
+				],
+				"extensions": [
+					".haml"
+				],
+				"configuration": "./haml.configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "haml",
+				"scopeName": "text.haml",
+				"path": "./syntaxes/haml.tmLanguage"
+			}
+		]
+	}
+}
