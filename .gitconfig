@@ -16,3 +16,18 @@
 	rc = rebase --continue
 	rs = rebase --skip
 	ra = rebase --abort
+	ls = ls-files
+	df = diff
+	dc = diff --cached
+[push]
+	default = simple
+[core]
+	excludesfile = /Users/mariusz/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[rebase]
+	autoStash = true

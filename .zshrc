@@ -64,7 +64,7 @@ export GOROOT=/usr/local/go
 export RBENV_ROOT=~/.rbenv
 export PG_ROOT=/Applications/Postgres.app/Contents/Versions/9.4
 
-export NODE_PATH=/usr/local/lib/node
+export NODE_PATH=/usr/local/lib/node:/usr/local/lib/node_modules
 
 export PATH=$RBENV_ROOT/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PG_ROOT/bin:/usr/local/go/bin:/usr/bin:/usr/sbin:/bin:/sbin:$GOPATH/bin
 
