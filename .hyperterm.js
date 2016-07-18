@@ -7,16 +7,16 @@ module.exports = {
     fontFamily: '"Fira Mono", "Menlo", monospace',
 
     // terminal cursor background color (hex)
-    cursorColor: '#F81CE5',
+    cursorColor: '#444',
 
     // color of the text
-    foregroundColor: '#ddd',
+    foregroundColor: '#ccc',
 
     // terminal background color
-    backgroundColor: '#000',
+    backgroundColor: '#121212',
 
     // border color (window, tabs)
-    borderColor: '#333',
+    borderColor: '#121212',
 
     // custom css to embed in the main window
     css: '',
