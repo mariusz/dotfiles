@@ -1,10 +1,13 @@
 " Vundle
-set rtp+=~/.vim/vundle/ 
-call vundle#rc()
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim 
+call vundle#begin()
 
 " Bundles
 " Let Vundle manage itself!
-Bundle 'gmarik/vundle'
+Bundle 'VundleVim/Vundle.vim'
 
 " Rest of the bundles
 Bundle 'mileszs/ack.vim'
@@ -19,7 +22,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
 Bundle 'mattn/zencoding-vim'
 Bundle 'duff/vim-scratch'
-Bundle 'kogent/vim-peepopen'
+Bundle 'shemerey/vim-peepopen'
 Bundle 'godlygeek/tabular'
 Bundle 'ddollar/nerdcommenter'
 Bundle 'altercation/vim-colors-solarized'
