@@ -1,4 +1,4 @@
-set guifont=Source_Code_pro:h11
+set guifont=Roboto_Mono:h12
 
 if has("gui_macvim")
   macmenu &File.New\ Tab key=<nop>
