@@ -41,6 +41,7 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'Lokaltog/powerline'
 Bundle 'vim-scripts/candycode.vim'
 Bundle 'slim-template/vim-slim'
+Bundle 'wincent/command-t'
 
 call vundle#end()
 
