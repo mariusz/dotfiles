@@ -3,6 +3,7 @@ set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " Bundles
 " Let Vundle manage itself!
@@ -41,6 +42,7 @@ Plugin 'Lokaltog/powerline'
 Plugin 'vim-scripts/candycode.vim'
 Plugin 'slim-template/vim-slim'
 Plugin 'kien/ctrlp.vim'
+Plugin 'dkprice/vim-easygrep'
 
 call vundle#end()
 
