@@ -2,46 +2,45 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim 
-call vundle#begin()
+set rtp+=~/.vim/bundle/Vundle.vim
 
 " Bundles
 " Let Vundle manage itself!
-Bundle 'VundleVim/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 " Rest of the bundles
-Bundle 'mileszs/ack.vim'
-Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-haml'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-markdown'
-Bundle 'msanders/snipmate.vim'
-Bundle 'cakebaker/scss-syntax.vim'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-fugitive'
-Bundle 'mattn/emmet-vim'
-Bundle 'duff/vim-scratch'
-Bundle 'shemerey/vim-peepopen'
-Bundle 'godlygeek/tabular'
-Bundle 'ddollar/nerdcommenter'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'nanotech/jellybeans.vim'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'tpope/vim-abolish'
-Bundle 'vim-scripts/jade.vim'
-Bundle 'vim-scripts/matchit.zip'
-Bundle 'wavded/vim-stylus'
-Bundle 'sickill/vim-pasta'
-Bundle 'juvenn/mustache.vim'
-Bundle 'aaronbieber/quicktask'
-Bundle 'vim-scripts/Rainbow-Parenthesis'
-Bundle 'vim-scripts/vim-pomodoro'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'Lokaltog/powerline'
-Bundle 'vim-scripts/candycode.vim'
-Bundle 'slim-template/vim-slim'
-Bundle 'wincent/command-t'
+Plugin 'mileszs/ack.vim'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-haml'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-markdown'
+Plugin 'msanders/snipmate.vim'
+Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-fugitive'
+Plugin 'mattn/emmet-vim'
+Plugin 'duff/vim-scratch'
+Plugin 'shemerey/vim-peepopen'
+Plugin 'godlygeek/tabular'
+Plugin 'ddollar/nerdcommenter'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'tpope/vim-abolish'
+Plugin 'vim-scripts/jade.vim'
+Plugin 'vim-scripts/matchit.zip'
+Plugin 'wavded/vim-stylus'
+Plugin 'sickill/vim-pasta'
+Plugin 'juvenn/mustache.vim'
+Plugin 'aaronbieber/quicktask'
+Plugin 'vim-scripts/Rainbow-Parenthesis'
+Plugin 'vim-scripts/vim-pomodoro'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'Lokaltog/powerline'
+Plugin 'vim-scripts/candycode.vim'
+Plugin 'slim-template/vim-slim'
+Plugin 'kien/ctrlp.vim'
 
 call vundle#end()
 
@@ -172,7 +171,7 @@ map <silent> <F2> <ESC>:NERDTreeToggle<CR>
 nmap <silent> <leader>ft :NERDTreeFind<CR>
 
 " Command-T
-map <silent> <D-t> <leader>p
+map <silent> <D-t> <ESC>:CtrlP<CR>
 
 " Move line(s) of text using Alt+j/k
 nmap <silent> <A-j> :m+<CR>==
