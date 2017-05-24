@@ -41,7 +41,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Lokaltog/powerline'
 Plugin 'vim-scripts/candycode.vim'
 Plugin 'slim-template/vim-slim'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'dkprice/vim-easygrep'
 
 call vundle#end()
@@ -291,6 +291,12 @@ function! ToggleScratch()
     Sscratch
   endif
 endfunction
+
+" Ctrl+P settings
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
 map <leader>s :call ToggleScratch()<CR>
 
