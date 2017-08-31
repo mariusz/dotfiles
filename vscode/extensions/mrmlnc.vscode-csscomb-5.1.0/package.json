@@ -1,0 +1,121 @@
+{
+	"name": "vscode-csscomb",
+	"displayName": "CSScomb",
+	"description": "Coding style formatter for CSS, Less, SCSS or Sass",
+	"version": "5.1.0",
+	"publisher": "mrmlnc",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.13.0"
+	},
+	"icon": "icon.png",
+	"author": {
+		"name": "Denis Malinochkin",
+		"url": "www.canonium.com"
+	},
+	"homepage": "https://github.com/mrmlnc/vscode-csscomb/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mrmlnc/vscode-csscomb"
+	},
+	"keywords": [
+		"CSScomb",
+		"CSS",
+		"Less",
+		"Sass",
+		"SCSS"
+	],
+	"categories": [
+		"Formatters"
+	],
+	"activationEvents": [
+		"onCommand:csscomb.execute",
+		"onLanguage:css",
+		"onLanguage:less",
+		"onLanguage:sass",
+		"onLanguage:sass-indented",
+		"onLanguage:scss"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "csscomb.execute",
+				"title": "CSSComb: Format styles"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "CSScomb configuration",
+			"properties": {
+				"csscomb.preset": {
+					"type": [
+						"object",
+						"string"
+					],
+					"default": {},
+					"description": "One of the predefined configs (csscomb, yandex, zen) or custom config (object) or path to config."
+				},
+				"csscomb.ignoreFilesOnSave": {
+					"type": "array",
+					"default": [],
+					"description": "An optional array of glob-patterns to ignore files on save."
+				},
+				"csscomb.supportEmbeddedStyles": {
+					"type": "boolean",
+					"default": true,
+					"description": "Support embedded CSS into HTML."
+				},
+				"csscomb.formatOnSave": {
+					"type": "boolean",
+					"default": false,
+					"description": "Auto format on save."
+				},
+				"csscomb.syntaxAssociations": {
+					"type": "object",
+					"default": {},
+					"description": "Configuration of syntax associations."
+				}
+			}
+		},
+		"jsonValidation": [
+			{
+				"fileMatch": "*csscomb.json",
+				"url": "http://json.schemastore.org/csscomb"
+			}
+		]
+	},
+	"devDependencies": {
+		"@types/micromatch": "^2.3.29",
+		"@types/mocha": "^2.2.41",
+		"@types/node": "^8.0.17",
+		"@types/proxyquire": "^1.3.27",
+		"mocha": "^3.4.2",
+		"proxyquire": "^1.8.0",
+		"rimraf": "^2.6.1",
+		"tslint": "^5.5.0",
+		"tslint-config-xo": "^1.3.0",
+		"typescript": "^2.4.2"
+	},
+	"dependencies": {
+		"config-profiler": "^2.0.2",
+		"csscomb": "^4.2.0",
+		"micromatch": "^3.0.4",
+		"tslib": "^1.7.1",
+		"vscode": "^1.1.4"
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"clean": "rimraf out",
+		"lint": "tslint src/**/*.ts -p .",
+		"compile": "tsc",
+		"test": "mocha out/{,**/}*.spec.js -s 0",
+		"build": "npm run clean && npm run lint && npm run compile && npm test",
+		"watch": "npm run clean && npm run lint && npm run compile -- --sourceMap --watch"
+	},
+	"__metadata": {
+		"id": "2af5556c-edd2-4786-9bbc-392b7dd89cd9",
+		"publisherId": "c958976e-9702-4f1a-8bdf-26b7bc012d65",
+		"publisherDisplayName": "mrmlnc"
+	}
+}

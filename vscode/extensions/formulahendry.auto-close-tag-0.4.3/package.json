@@ -1,0 +1,134 @@
+{
+	"name": "auto-close-tag",
+	"displayName": "Auto Close Tag",
+	"description": "Automatically add HTML/XML close tag, same as Visual Studio IDE or Sublime Text",
+	"version": "0.4.3",
+	"publisher": "formulahendry",
+	"icon": "images/logo.png",
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"categories": [
+		"Other",
+		"Languages"
+	],
+	"keywords": [
+		"AutoComplete",
+		"close",
+		"tag",
+		"html",
+		"xml"
+	],
+	"bugs": {
+		"url": "https://github.com/formulahendry/vscode-auto-close-tag/issues",
+		"email": "formulahendry@gmail.com"
+	},
+	"homepage": "https://github.com/formulahendry/vscode-auto-close-tag/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/formulahendry/vscode-auto-close-tag.git"
+	},
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "auto-close-tag.closeTag",
+				"title": "Close Tag"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "auto-close-tag.closeTag",
+				"key": "alt+.",
+				"mac": "cmd+alt+."
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Auto Close Tag configuration",
+			"properties": {
+				"auto-close-tag.activationOnLanguage": {
+					"type": "array",
+					"default": [
+						"html",
+						"xml",
+						"php",
+						"blade",
+						"ejs",
+						"handlebars",
+						"jinja",
+						"javascript",
+						"javascriptreact",
+						"typescript",
+						"typescriptreact",
+						"plaintext",
+						"markdown",
+						"razor",
+						"vue",
+						"liquid"
+					],
+					"description": "Set the languages that the extension will be activated.  e.g. [\"html\",\"xml\",\"php\"]. Use [\"*\"] to activate for all languages."
+				},
+				"auto-close-tag.excludedTags": {
+					"type": "array",
+					"default": [
+						"area",
+						"base",
+						"br",
+						"col",
+						"command",
+						"embed",
+						"hr",
+						"img",
+						"input",
+						"keygen",
+						"link",
+						"meta",
+						"param",
+						"source",
+						"track",
+						"wbr"
+					],
+					"description": "Set the tag list that would not be auto closed."
+				},
+				"auto-close-tag.SublimeText3Mode": {
+					"type": "boolean",
+					"default": false,
+					"description": "Auto close tag when </ is typed, same as Sublime Text 3"
+				},
+				"auto-close-tag.enableAutoCloseTag": {
+					"type": "boolean",
+					"default": true,
+					"description": "Whether to insert close tag automatically"
+				},
+				"auto-close-tag.enableAutoCloseSelfClosingTag": {
+					"type": "boolean",
+					"default": true,
+					"description": "Whether to close self-closing tag automatically"
+				},
+				"auto-close-tag.fullMode": {
+					"type": "boolean",
+					"default": false,
+					"description": "Enable both Visual Studio and Sublime Text mode"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"devDependencies": {
+		"typescript": "^1.8.5",
+		"vscode": "^0.11.0"
+	},
+	"__metadata": {
+		"id": "d3836729-9cc1-42c1-b2af-d50071f57d29",
+		"publisherId": "38bbe3f0-5204-4170-845e-c2f966d979b8",
+		"publisherDisplayName": "Jun Han"
+	}
+}

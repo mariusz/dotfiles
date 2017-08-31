@@ -1,0 +1,135 @@
+{
+	"name": "gitblame",
+	"displayName": "Git Blame",
+	"description": "See git blame information in the status bar.",
+	"version": "2.1.0",
+	"publisher": "waderyan",
+	"engines": {
+		"vscode": "^1.10.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"galleryBanner": {
+		"color": "#f0efe7",
+		"theme": "light"
+	},
+	"icon": "images/git_icon.png",
+	"activationEvents": [
+		"*"
+	],
+	"keywords": [
+		"git",
+		"gitblame",
+		"blame"
+	],
+	"qna": false,
+	"main": "./out/src/index",
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"dependencies": {
+		"moment": "^2.18.1",
+		"valid-url": "^1.0.9"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.41",
+		"@types/node": "^7.0.27",
+		"mocha": "^3.4.2",
+		"typescript": "^2.4.2",
+		"vscode": "^1.1.4"
+	},
+	"homepage": "https://github.com/Sertion/vscode-gitblame/blob/master/README.md",
+	"bugs": {
+		"url": "https://github.com/Sertion/vscode-gitblame/issues"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Sertion/vscode-gitblame"
+	},
+	"contributes": {
+		"commands": [
+			{
+				"command": "gitblame.quickInfo",
+				"title": "Git Blame: Show quick info"
+			},
+			{
+				"command": "gitblame.online",
+				"title": "Git Blame: View last change online"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Git blame configuration",
+			"properties": {
+				"gitblame.commitUrl": {
+					"type": "string",
+					"default": "",
+					"description": "The link to an online tool to view a commit (use ${hash} for the commit hash)"
+				},
+				"gitblame.ignoreWhitespace": {
+					"type": "boolean",
+					"default": false,
+					"description": "Ignore whitespace changes when blaming (-w flag)"
+				},
+				"gitblame.infoMessageFormat": {
+					"type": "string",
+					"default": "${commit.hash} ${commit.summary}",
+					"description": "Customize the info message"
+				},
+				"gitblame.internalHashLength": {
+					"type": "number",
+					"default": 10,
+					"description": "How long git hashes gitblame will use for indexes internaly",
+					"minimum": 7,
+					"maximum": 40
+				},
+				"gitblame.logLevel": {
+					"type": "array",
+					"default": [
+						"info",
+						"error",
+						"command",
+						"critical"
+					],
+					"description": "Limit what levels of log message get sent to the log",
+					"items": {
+						"type": "string",
+						"enum": [
+							"info",
+							"error",
+							"command",
+							"critical"
+						]
+					}
+				},
+				"gitblame.progressSpinner": {
+					"type": "array",
+					"default": [
+						"$(sync~spin)"
+					],
+					"description": "A series of string that denotes progress"
+				},
+				"gitblame.statusBarMessageFormat": {
+					"type": "string",
+					"default": "Blame ${author.name} ( ${time.ago} )",
+					"description": "Customize the status bar message"
+				},
+				"gitblame.statusBarMessageNoCommit": {
+					"type": "string",
+					"default": "Not Committed Yet",
+					"description": "Customize the status bar message"
+				}
+			}
+		}
+	},
+	"__metadata": {
+		"id": "2335b326-c334-4e81-bc51-c408fcec6e7c",
+		"publisherId": "531ba7ca-0230-4a97-bfd1-0d02fdb02958",
+		"publisherDisplayName": "Wade Anderson"
+	}
+}

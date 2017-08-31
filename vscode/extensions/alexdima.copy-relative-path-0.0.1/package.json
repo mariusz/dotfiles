@@ -1,0 +1,46 @@
+{
+	"name": "copy-relative-path",
+	"displayName": "Copy Relative Path",
+	"description": "Copy Relative Path from a File",
+	"version": "0.0.1",
+	"publisher": "alexdima",
+	"engines": {
+		"vscode": "^1.4.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:copyRelativePath"
+	],
+	"main": "./extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "copyRelativePath",
+				"title": "Copy Relative Path"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "copyRelativePath"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"devDependencies": {
+		"vscode": "^0.11.0"
+	},
+	"dependencies": {
+		"copy-paste": "^1.3.0"
+	},
+	"__metadata": {
+		"id": "060828aa-17ab-40d9-9e2d-f8407f5c8d04",
+		"publisherId": "36c010fa-f346-4325-ab00-0e8c727dbe17",
+		"publisherDisplayName": "alexdima"
+	}
+}
