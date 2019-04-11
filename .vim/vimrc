@@ -14,7 +14,6 @@ Plugin 'mileszs/ack.vim'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-haml'
-Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-markdown'
 Plugin 'msanders/snipmate.vim'
 Plugin 'cakebaker/scss-syntax.vim'
@@ -43,6 +42,7 @@ Plugin 'vim-scripts/candycode.vim'
 Plugin 'slim-template/vim-slim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'dkprice/vim-easygrep'
+Plugin 'zivyangll/git-blame.vim'
 
 call vundle#end()
 
@@ -168,10 +168,6 @@ set noswapfile
 set nowritebackup
 set directory=~/.vim/tmp
 
-" NERD tree
-map <silent> <F2> <ESC>:NERDTreeToggle<CR>
-nmap <silent> <leader>ft :NERDTreeFind<CR>
-
 " Command-T
 map <silent> <D-t> <ESC>:CtrlP<CR>
 
@@ -197,6 +193,11 @@ vmap <D-]> >gv
 imap <D-[> <ESC><<gi
 imap <D-]> <ESC>>>gi
 
+" Map pane movement
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
 
 " Remove the annoying icons - we should use keyboard anyway!
 if has("gui_running")
@@ -305,3 +306,15 @@ if has("gui_macvim")
 endif
 
 filetype plugin indent on
+
+" netrw settings
+let g:netrw_liststyle = 3
+let g:netrw_banner = 0
+let g:netrw_browse_split = 4
+let g:netrw_winsize = 25
+let g:netrw_altv = 1
+
+augroup ProjectDrawer
+  autocmd!
+  autocmd VimEnter * :Vexplore
+augroup END

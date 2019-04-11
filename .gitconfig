@@ -3,6 +3,7 @@
 # Please adapt and uncomment the following lines:
 	name = Mariusz Ciesla
 	email = mariusz@dotmariusz.net
+	signingkey = C4D204637F801FA8
 
 [alias]
 	co = checkout
