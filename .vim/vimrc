@@ -1,49 +1,41 @@
-" Vundle
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" Bundles
-" Let Vundle manage itself!
-Plugin 'VundleVim/Vundle.vim'
-
-" Rest of the bundles
-Plugin 'mileszs/ack.vim'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-haml'
-Plugin 'tpope/vim-markdown'
-Plugin 'msanders/snipmate.vim'
-Plugin 'cakebaker/scss-syntax.vim'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-fugitive'
-Plugin 'mattn/emmet-vim'
-Plugin 'duff/vim-scratch'
-Plugin 'shemerey/vim-peepopen'
-Plugin 'godlygeek/tabular'
-Plugin 'ddollar/nerdcommenter'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'nanotech/jellybeans.vim'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'tpope/vim-abolish'
-Plugin 'vim-scripts/jade.vim'
-Plugin 'vim-scripts/matchit.zip'
-Plugin 'wavded/vim-stylus'
-Plugin 'sickill/vim-pasta'
-Plugin 'juvenn/mustache.vim'
-Plugin 'aaronbieber/quicktask'
-Plugin 'vim-scripts/Rainbow-Parenthesis'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'Lokaltog/powerline'
-Plugin 'vim-scripts/candycode.vim'
-Plugin 'slim-template/vim-slim'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'dkprice/vim-easygrep'
-Plugin 'zivyangll/git-blame.vim'
-
-call vundle#end()
+" Plugins
+call plug#begin()
+Plug 'mileszs/ack.vim'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-haml'
+Plug 'tpope/vim-markdown'
+Plug 'msanders/snipmate.vim'
+Plug 'cakebaker/scss-syntax.vim'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
+Plug 'mattn/emmet-vim'
+Plug 'duff/vim-scratch'
+Plug 'shemerey/vim-peepopen'
+Plug 'godlygeek/tabular'
+Plug 'ddollar/nerdcommenter'
+Plug 'altercation/vim-colors-solarized'
+Plug 'nanotech/jellybeans.vim'
+Plug 'kchmck/vim-coffee-script'
+Plug 'tpope/vim-abolish'
+Plug 'vim-scripts/jade.vim'
+Plug 'vim-scripts/matchit.zip'
+Plug 'wavded/vim-stylus'
+Plug 'sickill/vim-pasta'
+Plug 'juvenn/mustache.vim'
+Plug 'aaronbieber/quicktask'
+Plug 'vim-scripts/Rainbow-Parenthesis'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'Lokaltog/powerline'
+Plug 'vim-scripts/candycode.vim'
+Plug 'slim-template/vim-slim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'dkprice/vim-easygrep'
+Plug 'zivyangll/git-blame.vim'
+call plug#end()
 
 " Setting up Powerline
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim

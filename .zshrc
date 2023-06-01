@@ -53,7 +53,7 @@ alias grc="git rebase --continue"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 
-plugins=(git osx rails ruby rbenv bundler)
+plugins=(git rails ruby rbenv bundler)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
@@ -66,15 +66,22 @@ export PG_ROOT=/Applications/Postgres.app/Contents/Versions/9.4
 
 export NODE_PATH=/usr/local/lib/node:/usr/local/lib/node_modules
 
-export PATH=$RBENV_ROOT/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PG_ROOT/bin:/usr/local/go/bin:/usr/bin:/usr/sbin:/bin:/sbin:$GOPATH/bin
+export PYENV_ROOT=$HOME/.pyenv
+
+export PATH=$PYENV_ROOT/bin:$RBENV_ROOT/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PG_ROOT/bin:/usr/local/go/bin:/usr/bin:/usr/sbin:/bin:/sbin:$GOPATH/bin
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 
-eval "$(rbenv init -)"
+# pyenv aliases
+alias python="$(pyenv which python)"
+alias pip="$(pyenv which pip)"
 
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+eval "$(rbenv init -)"
+eval "$(nodenv init -)"
+eval "$(pyenv init -)"
+eval "$(/usr/local/bin/brew shellenv)"
 
 source ~/.zshrc.work
+
