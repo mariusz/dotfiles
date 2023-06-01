@@ -1,7 +1,6 @@
-.vim/bundle/*
 .netrwhist
 .vim/tmp/*
 .vim/backup/*
+.vim/plugged
 .DS_Store
-Vundle.vim
 vscode/extensions/*
