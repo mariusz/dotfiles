@@ -3,5 +3,6 @@
 .vim/backup/*
 .vim/plugged
 .config/gcloud/*
+.config/configstore/*
 .DS_Store
 vscode/extensions/*
