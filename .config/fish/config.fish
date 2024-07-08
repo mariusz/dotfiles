@@ -8,4 +8,9 @@ alias gc="git commit"
 alias gp="git push"
 alias gr="git rebase"
 
+eval "$(rbenv init -)"
+eval "$(nodenv init -)"
+eval "$(pyenv init -)"
+eval "$(/usr/local/bin/brew shellenv)"
+
 source ~/.work.fish
