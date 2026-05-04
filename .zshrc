@@ -58,34 +58,11 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-export GOPATH=$HOME/go
-export GOROOT=/usr/local/go
-
-export RBENV_ROOT=~/.rbenv
-export PG_ROOT=/Applications/Postgres.app/Contents/Versions/9.4
-
-export NODE_PATH=/usr/local/lib/node:/usr/local/lib/node_modules
-
-export PYENV_ROOT=$HOME/.pyenv
-
-export PATH=$PYENV_ROOT/bin:$RBENV_ROOT/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PG_ROOT/bin:/usr/local/go/bin:/usr/bin:/usr/sbin:/bin:/sbin:$GOPATH/bin
-
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 
-# pyenv aliases
-alias python="$(pyenv which python)"
-alias pip="$(pyenv which pip)"
 
-eval "$(rbenv init -)"
-eval "$(nodenv init -)"
-eval "$(pyenv init -)"
-eval "$(/usr/local/bin/brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 source ~/.zshrc.work
-
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
